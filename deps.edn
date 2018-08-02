@@ -3,4 +3,4 @@
         me.arrdem/guten-tag {:mvn/version  "0.1.6" :exclusions [org.clojure/clojure]}
         version-clj {:mvn/version "0.1.2"}
         org.clojure/core.match {:mvn/version "0.3.0-alpha4" :exclusions [org.clojure/clojure]}
-        com.cemerick/url {:mvn/version "0.1.1" :exclusions [com.cemerick/clojurescript.test org.clojure/clojure]}}
+        com.cemerick/url {:mvn/version "0.1.1" :exclusions [com.cemerick/clojurescript.test org.clojure/clojure]}}}
