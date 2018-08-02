@@ -10,7 +10,8 @@
             [grimoire.api.fs.impl :as impl]
             [clojure.java.io :as io]
             [clojure.string :as string]
-            [cemerick.url :as url])
+            [cemerick.url :as url]
+            [version-clj.core :as v])
   (:import [java.io File]))
 
 (defn- f->name [^File f]
@@ -52,7 +53,7 @@
       (->> (for [d     (reverse (sort (.listFiles handle)))
                  :when (.isDirectory d)]
              (t/->Version artifact (f->name d)))
-           (sort-by (comp util/clojure-version->cmp-key t/thing->name))
+           (sort-by t/thing->name v/version-compare)
            reverse
            succeed)
       (fail (str "No such artifact "

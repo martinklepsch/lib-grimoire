@@ -9,6 +9,7 @@
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [me.arrdem/guten-tag "0.1.6"
                   :exclusions [org.clojure/clojure]]
+                 [version-clj "0.1.2"]
                  [org.clojure/core.match "0.3.0-alpha4"
                   :exclusions [org.clojure/clojure]]
                  [com.cemerick/url "0.1.1"
